@@ -6,11 +6,11 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-        <a-entity
-          position="0 0 0"
-          scale="0.05 0.05 0.05"
-          <a-image src="https://www.parkerlebnis.de/wp-content/uploads/2014/10/europa-park-winter.jpg"></a-image>
-        ></a-entity>
+        <a-text
+        value="Wir gehen in den Europa-Park!"
+        look-at="[gps-camera]"
+        scale="120 120 120"
+      ></a-text>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>

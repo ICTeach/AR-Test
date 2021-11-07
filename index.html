@@ -6,7 +6,11 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-     <a-entity text-geometry="value: COOL!!!; font: #optimerBoldFont"></a-entity>
+   <a-assets>
+      <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+    </a-assets>
+      
+    <a-entity text-geometry="value: COOL!!!; font: #optimerBoldFont"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>

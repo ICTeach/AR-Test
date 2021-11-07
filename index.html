@@ -6,7 +6,7 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-       <a-text value="Hello, World!" position="270 0 0"></a-text>
+       <a-text value="Hello, World!" look-at="[gps-camera]"></a-text>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
